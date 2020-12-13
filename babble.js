@@ -6,8 +6,8 @@ let spanishWords = {
     "Casa": "House",
     "Coche": "Car",
     "Sol": "Sun",
-    "Sierra": "Mountain",
-    "Tarde": "Afternoon",
+    "Montaña": "Mountain",
+    "Chica": "Girl",
     "Amigo": "Friend"
 }
 
