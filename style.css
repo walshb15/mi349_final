@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background-color: #F8FFCA;*/
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: #F3FF67;
+    border-bottom: solid 3px black;
+}
+
+em {
+    font-style: normal;
+    font-size: 60px;
+    display: block;
+    margin: 20px;
+}
+
+.controls {
+    text-align: center;
+}
+
+#siteLogo {
+    max-height: 98%;
+}
+
+#navList {
+    position: absolute;
+    list-style-type: none;
+    top: 0;
+    right: 30px;
+}
+
+#navList li {
+    margin: 10px;
+    display: inline-flex;
+}
+
+#navList a {
+    text-decoration: none;
+    padding:20px;
+    color: black;
+    display: block;
+}
+
+#navList a:hover {
+    background-color: gray;
+}
+
+.cardContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #009DFF;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardOverlay {
+    position: absolute;
+    bottom: 0;
+    background: #FF6C00;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    font-size: 20px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cardOverlay:hover {
+    opacity: 0;
+}
+
+.centeredStuff {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#spanishSection {
+    display: none;
+}
+
+#italianSection {
+    display: none;
+}
+
+#frenchSection {
+    display: none;
+}
+
+.aboutContent {
+    margin: 40px;
+    margin-left: 160px;
+    margin-right: 160px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#aboutFlex {
+    display: flex;
+}
+
+.aboutContent img {
+    max-width: 100%;
+}
+
+#aboutImgContainer {
+    flex: 0.2;
+}
+
+#aboutTextContainer {
+    margin: 10px;
+    flex: 0.8;
+}
+
+#languageSelect {
+    font-size: 30px;
+}
+
+.controls button {
+    font-size: 30px;
+    background-color: #009DFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px;
+    margin-left: 15px;
+}
+
+.controls button:hover {
+    color: black;
+    background-color: #FF6C00;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .centeredStuff h1 {
+        font-size: 20px;
+    }
+
+    .centeredStuff em {
+        font-size: 40px;
+    }
+
+    .aboutContent {
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cardContainer {
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centeredStuff h1 {
+        font-size: 40px;
+    }
+
+    .centeredStuff em {
+        font-size: 60px;
+    }
+
+    #navList {
+        top: -18px;
+        right: 0;
+    }
+
+    #navList li {
+        margin: 4px;
+        padding: 10px;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    .aboutContent {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    #aboutFlex {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .controls {
+        margin: 10px;
+
+    }
+
+    .controls button {
+        margin: 20px;
+    }
+
+    .card {
+        width: 93vw;
+        height: 93vw;
+        margin: 7px;
+    }
+}
